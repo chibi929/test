@@ -91,7 +91,8 @@
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        console.log("CHIBI:", document.body.clientWidth, document.body.clientHeight)
+        console.log("CHIBI(document.body.clientXxx):", document.body.clientWidth, document.body.clientHeight)
+        console.log("CHIBI(window.innerXxx):", window.innerWidth, window,innerHeight)
 
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
