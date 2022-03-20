@@ -9,8 +9,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 480px;
-  height: 270px;
+  width: calc(480px * 1.38);
+  height: calc(270px * 1.38);
 }
 #unity-container.unity-mobile {
   width: 100%;
